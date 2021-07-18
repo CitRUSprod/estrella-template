@@ -1,5 +1,6 @@
 const path = require("path")
 const { nodeExternalsPlugin } = require("esbuild-node-externals")
+const { default: cleanPlugin } = require("esbuild-plugin-clean")
 
 const baseConfig = {
     entry: path.join(__dirname, "../../src/app.ts"),
@@ -7,7 +8,12 @@ const baseConfig = {
     bundle: true,
     platform: "node",
     inject: [path.join(__dirname, "dotenv.js")],
-    plugins: [nodeExternalsPlugin()]
+    plugins: [
+        nodeExternalsPlugin(),
+        cleanPlugin({
+            patterns: ["dist/*"]
+        })
+    ]
 }
 
 module.exports = baseConfig

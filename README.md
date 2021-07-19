@@ -1,4 +1,4 @@
-# Estrella Template
+# Estrella (ESBuild) Template
 
 ### Get started
 

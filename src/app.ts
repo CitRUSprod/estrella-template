@@ -1,6 +1,4 @@
-function say(text: string) {
-    console.log(text)
-}
+import { log } from "$/utils"
 
-say(`Mode: ${process.env.NODE_ENV!}`)
-say(`Message: ${process.env.MESSAGE ?? "(empty)"}`)
+log(`Mode: ${process.env.NODE_ENV!}`)
+log(`Message: ${process.env.MESSAGE ?? "(empty)"}`)

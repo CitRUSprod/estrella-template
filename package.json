@@ -6,6 +6,7 @@
         "build": "node configs/estrella/prod",
         "start": "node dist/app",
         "validate": "tsc --noEmit",
+        "test": "jest --coverage",
         "git:commit": "git-cz",
         "prettier": "prettier --check",
         "prettier:fix": "pnpm prettier -- --write",
@@ -17,7 +18,7 @@
         "eslint:fix:all": "pnpm eslint:all -- --fix",
         "lint": "pnpm prettier:all && pnpm eslint:all",
         "format": "pnpm prettier:fix:all && pnpm eslint:fix:all",
-        "ci": "pnpm validate && pnpm lint",
+        "ci": "pnpm validate && pnpm lint && pnpm test",
         "prepare": "husky install"
     },
     "lint-staged": {
@@ -36,6 +37,16 @@
     "eslintConfig": {
         "extends": "./configs/eslint/index.js"
     },
+    "jest": {
+        "moduleNameMapper": {
+            "\\$/(.*)": "<rootDir>/src/$1"
+        },
+        "preset": "ts-jest",
+        "setupFilesAfterEnv": [
+            "jest-extended"
+        ],
+        "testEnvironment": "node"
+    },
     "dependencies": {
         "dotenv": "10.0.0"
     },
@@ -43,6 +54,7 @@
         "@citrus-linting/eslint-config": "0.16.0",
         "@citrus-linting/prettier-config": "0.2.0",
         "@commitlint/cli": "12.1.4",
+        "@types/jest": "26.0.24",
         "@types/node": "16.3.3",
         "@typescript-eslint/eslint-plugin": "4.28.4",
         "@typescript-eslint/parser": "4.28.4",
@@ -56,10 +68,13 @@
         "estrella": "1.4.1",
         "husky": "7.0.1",
         "inquirer": "8.1.2",
+        "jest": "27.0.6",
+        "jest-extended": "0.11.5",
         "lint-staged": "11.0.1",
         "prettier": "2.3.2",
         "prettier-plugin-packagejson": "2.2.11",
         "source-map-support": "0.5.19",
+        "ts-jest": "27.0.3",
         "type-fest": "1.2.2",
         "typescript": "4.3.5"
     }

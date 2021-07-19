@@ -2,4 +2,5 @@
 .vscode
 *.log
 dist
+coverage
 node_modules

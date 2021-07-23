@@ -1,11 +1,11 @@
 lockfileVersion: 5.3
 
 specifiers:
-  '@citrus-linting/eslint-config': 0.16.0
+  '@citrus-linting/eslint-config': 0.16.1
   '@citrus-linting/prettier-config': 0.2.0
   '@commitlint/cli': 12.1.4
   '@types/jest': 26.0.24
-  '@types/node': 16.3.3
+  '@types/node': 16.4.1
   '@typescript-eslint/eslint-plugin': 4.28.4
   '@typescript-eslint/parser': 4.28.4
   commitizen: 4.2.4
@@ -21,11 +21,11 @@ specifiers:
   inquirer: 8.1.2
   jest: 27.0.6
   jest-extended: 0.11.5
-  lint-staged: 11.0.1
+  lint-staged: 11.1.0
   prettier: 2.3.2
   prettier-plugin-packagejson: 2.2.11
   source-map-support: 0.5.19
-  ts-jest: 27.0.3
+  ts-jest: 27.0.4
   type-fest: 1.2.2
   typescript: 4.3.5
 
@@ -33,11 +33,11 @@ dependencies:
   dotenv: 10.0.0
 
 devDependencies:
-  '@citrus-linting/eslint-config': 0.16.0
+  '@citrus-linting/eslint-config': 0.16.1
   '@citrus-linting/prettier-config': 0.2.0
   '@commitlint/cli': 12.1.4
   '@types/jest': 26.0.24
-  '@types/node': 16.3.3
+  '@types/node': 16.4.1
   '@typescript-eslint/eslint-plugin': 4.28.4_b1648df9f9ba40bdeef3710a5a5af353
   '@typescript-eslint/parser': 4.28.4_eslint@7.31.0+typescript@4.3.5
   commitizen: 4.2.4
@@ -52,11 +52,11 @@ devDependencies:
   inquirer: 8.1.2
   jest: 27.0.6
   jest-extended: 0.11.5
-  lint-staged: 11.0.1
+  lint-staged: 11.1.0
   prettier: 2.3.2
   prettier-plugin-packagejson: 2.2.11_prettier@2.3.2
   source-map-support: 0.5.19
-  ts-jest: 27.0.3_jest@27.0.6+typescript@4.3.5
+  ts-jest: 27.0.4_52cc4273aa16028085013af47e479e10
   type-fest: 1.2.2
   typescript: 4.3.5
 
@@ -409,8 +409,8 @@ packages:
     resolution: {integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==}
     dev: true
 
-  /@citrus-linting/eslint-config/0.16.0:
-    resolution: {integrity: sha512-SA3X9OrkAZp8uYaQRh40AkZpJa/vpHZlfRf+6LE3WoCKcAztz8JHV4pOpr0Ej3hun5Nd4fmurcJnGgv0aVfPVA==}
+  /@citrus-linting/eslint-config/0.16.1:
+    resolution: {integrity: sha512-NIXmd1p6zMeFhfw6iygd0pIhARQKL7LJb8c/B8zxDNIaINX/Aeos0A3Ume8kcpLbN78G4Q/kjec7qCWKjtUxzQ==}
     dev: true
 
   /@citrus-linting/prettier-config/0.2.0:
@@ -962,6 +962,10 @@ packages:
 
   /@types/node/16.3.3:
     resolution: {integrity: sha512-8h7k1YgQKxKXWckzFCMfsIwn0Y61UK6tlD6y2lOb3hTOIMlK3t9/QwHOhc81TwU+RMf0As5fj7NPjroERCnejQ==}
+    dev: true
+
+  /@types/node/16.4.1:
+    resolution: {integrity: sha512-UW7cbLqf/Wu5XH2RKKY1cHwUNLicIDRLMraYKz+HHAerJ0ZffUEk+fMnd8qU2JaS6cAy0r8tsaf7yqHASf/Y0Q==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -3859,8 +3863,8 @@ packages:
     resolution: {integrity: sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=}
     dev: true
 
-  /lint-staged/11.0.1:
-    resolution: {integrity: sha512-RkTA1ulE6jAGFskxpGAwxfVRXjHp7D9gFg/+KMARUWMPiVFP0t28Em2u0gL8sA0w3/ck3TC57F2v2RNeQ5XPnw==}
+  /lint-staged/11.1.0:
+    resolution: {integrity: sha512-pzwEf+NKbTauAlk7gPPwTfulRXESEPZCSFXYfg20F220UOObebxu5uL5mkr9csQLNOM2Ydfrt3DJXakzAL7aaQ==}
     hasBin: true
     dependencies:
       chalk: 4.1.1
@@ -5223,14 +5227,25 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /ts-jest/27.0.3_jest@27.0.6+typescript@4.3.5:
-    resolution: {integrity: sha512-U5rdMjnYam9Ucw+h0QvtNDbc5+88nxt7tbIvqaZUhFrfG4+SkWhMXjejCLVGcpILTPuV+H3W/GZDZrnZFpPeXw==}
+  /ts-jest/27.0.4_52cc4273aa16028085013af47e479e10:
+    resolution: {integrity: sha512-c4E1ECy9Xz2WGfTMyHbSaArlIva7Wi2p43QOMmCqjSSjHP06KXv+aT+eSY+yZMuqsMi3k7pyGsGj2q5oSl5WfQ==}
     engines: {node: ^10.13.0 || ^12.13.0 || ^14.15.0 || >=15.0.0}
     hasBin: true
     peerDependencies:
+      '@babel/core': '>=7.0.0-beta.0 <8'
+      '@types/jest': ^26.0.0
+      babel-jest: '>=27.0.0 <28'
       jest: ^27.0.0
       typescript: '>=3.8 <5.0'
+    peerDependenciesMeta:
+      '@babel/core':
+        optional: true
+      '@types/jest':
+        optional: true
+      babel-jest:
+        optional: true
     dependencies:
+      '@types/jest': 26.0.24
       bs-logger: 0.2.6
       buffer-from: 1.1.1
       fast-json-stable-stringify: 2.1.0

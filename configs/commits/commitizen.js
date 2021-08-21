@@ -24,7 +24,8 @@ function convertCommitTypes(typesObject = {}) {
     return commitTypes
 }
 
-module.exports = {
+/** @type {import("cz-customizable").Options} */
+const config = {
     types: convertCommitTypes(types),
     scopes: [
         new Separator("─────── Configs ────────"),
@@ -38,3 +39,5 @@ module.exports = {
     skipQuestions: ["body", "footer"],
     upperCaseSubject: true
 }
+
+module.exports = config

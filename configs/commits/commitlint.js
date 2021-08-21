@@ -1,6 +1,7 @@
 const { types, getScopes } = require("./base")
 
-module.exports = {
+/** @type {import("@commitlint/types").UserConfig} */
+const config = {
     rules: {
         "body-empty": [2, "always"],
         "footer-empty": [2, "always"],
@@ -15,3 +16,5 @@ module.exports = {
         "type-enum": [2, "always", Object.keys(types)]
     }
 }
+
+module.exports = config

@@ -6,7 +6,6 @@ const config = {
         "@citrus-linting/eslint-config/jest",
         "prettier"
     ],
-    ignorePatterns: ["!.travis.yml", "coverage", "dist", "pnpm-lock.yaml"],
     plugins: ["prettier"],
     rules: {
         "prettier/prettier": [2]
